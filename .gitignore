@@ -2,3 +2,6 @@ pyinstaller.txt
 /build
 /__pycache__
 firefox.spec
+/geckodriver.log
+/.idea
+/dist

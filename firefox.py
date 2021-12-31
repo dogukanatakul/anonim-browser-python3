@@ -2,13 +2,7 @@
 # -*-coding:utf-8-*-
 from selenium import webdriver
 import time
-import requests
 import settings as setting
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium.webdriver.firefox.options import Options
 from webdriver_manager.firefox import GeckoDriverManager
 import sys
 import json

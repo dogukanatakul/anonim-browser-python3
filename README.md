@@ -5,5 +5,6 @@
 # Bilinmeyen Tarayıcı Python 3 ile
 * Firefox tarayıcısının altyapısını kullanarak internette gizli kalmanızı sağlayan bir python 3 projesi.
 
-## Build
+## Usage
+pip install -r requirements.txt
 pyinstaller.exe --onefile .\firefox.py --icon .\app.ico
