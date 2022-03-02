@@ -1,8 +1,4 @@
-import string
 import random
-import unicodedata
-import re
-import array as arr
 import json
 
 
@@ -13,6 +9,7 @@ def getDevice():
         devices.append(line)
     file.close()
     return ''.join(random.choice(devices))
+
 
 def getLocation():
     locations = []

@@ -1,5 +1,6 @@
 {
-  "workSleep": 15,
-  "user-agent": "on",
-  "vpn": "on"
+  "workSleep": 5,
+  "userAgent": "on",
+  "vpn": "on",
+  "fakeGeo": "on"
 }
