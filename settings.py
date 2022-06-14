@@ -8,7 +8,30 @@ def getDevice():
     for line in file:
         devices.append(line)
     file.close()
-    return ''.join(random.choice(devices))
+    return ''.join(random.choice(devices).replace("\n", ""))
+
+
+def getProxies():
+    proxies = []
+    file = open('proxies.txt', 'r')
+    for line in file:
+        proxies.append(line)
+    file.close()
+    proxy = random.choice(proxies).split(":")
+    if len(proxy) > 2:
+        return {
+            'ip': str(proxy[0]),
+            'port': int(proxy[1]),
+            'user': proxy[2],
+            'pass': proxy[3].replace("\n", ""),
+        }
+    else:
+        return {
+            'ip': str(proxy[0]),
+            'port': int(proxy[1].replace("\n", "")),
+            'user': None,
+            'pass': None,
+        }
 
 
 def getLocation():
@@ -17,7 +40,7 @@ def getLocation():
     for line in file:
         locations.append(line)
     file.close()
-    explode = random.choice(locations).split("/")
+    explode = random.choice(locations).replace("\n", "").split("/")
     return explode
 
 
